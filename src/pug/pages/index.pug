@@ -1,0 +1,37 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "Главная";
+
+block content
+    include ./../sections/header.pug
+
+    .container.mainpage-content
+        .row
+            .col-9
+
+                +post("Austin DIY sriracha polaroid sartorial la croix.", "december 26, 2019 — 5 comments", "img-01.jpg", "inner.html")
+                    p Austin DIY sriracha polaroid sartorial la croix. Air plant vexillologist tilde listicle try-hard tousled. Drinking vinegar flexitarian tumblr, chia aesthetic lyft yuccie. Vegan jean shorts swag, single-origin coffee beard quinoa street art activated charcoal chartreuse whatever.
+                    p Ramps mlkshk hammock, disrupt butcher poutine ethical prism photo booth keffiyeh franzen edison bulb hoodie master cleanse. Gastropub tofu schlitz, coloring book 3 wolf moon ennui gochujang tousled meggings hot chicken listicle. YOLO plaid fanny pack jean shorts pop-up truffaut tousled kombucha salvia whatever fixie tacos swag man bun migas.
+
+                +post("Vinyl hexagon tbh selvage chambray street art. ", "december 12, 2019 — 0 comments", "img-02.jpg", "inner.html")
+                    p Hashtag kickstarter aesthetic squid franzen wayfarers. Mlkshk flannel listicle, tumblr iceland poutine cold-pressed marfa. Microdosing deep v af flexitarian bushwick marfa shaman cronut, put a bird on it tbh viral. Pug kitsch organic schlitz actually synth iPhone forage cornhole thundercats hammock yuccie austin la croix. Pork belly chambray cliche hot chicken air plant.
+
+                +post("Austin DIY sriracha polaroid sartorial la croix.", "december 26, 2019 — 5 comments", "img-03.jpg", "inner.html")
+                     p Hashtag kickstarter aesthetic squid franzen wayfarers. Mlkshk flannel listicle, tumblr iceland poutine cold-pressed marfa. Microdosing deep v af flexitarian bushwick marfa shaman cronut, put a bird on it tbh viral. Pug kitsch organic schlitz actually synth iPhone forage cornhole thundercats hammock yuccie austin la croix. Pork belly chambray cliche hot chicken air plant.
+
+                +post("Austin DIY sriracha polaroid sartorial la croix.", "december 26, 2019 — 5 comments", "img-04.jpg", "inner.html")
+                     p Hashtag kickstarter aesthetic squid franzen wayfarers. Mlkshk flannel listicle, tumblr iceland poutine cold-pressed marfa. Microdosing deep v af flexitarian bushwick marfa shaman cronut, put a bird on it tbh viral. Pug kitsch organic schlitz actually synth iPhone forage cornhole thundercats hammock yuccie austin la croix. Pork belly chambray cliche hot chicken air plant.
+
+                +post("Austin DIY sriracha polaroid sartorial la croix.", "december 26, 2019 — 5 comments", "img-05.jpg", "inner.html")
+                     p Hashtag kickstarter aesthetic squid franzen wayfarers. Mlkshk flannel listicle, tumblr iceland poutine cold-pressed marfa. Microdosing deep v af flexitarian bushwick marfa shaman cronut, put a bird on it tbh viral. Pug kitsch organic schlitz actually synth iPhone forage cornhole thundercats hammock yuccie austin la croix. Pork belly chambray cliche hot chicken air plant.
+
+                include ./../sections/pagination.pug
+
+            .col-3
+
+                include ./../sections/recent-posts.pug
+                include ./../sections/popular-posts.pug
+                include ./../sections/widget-instagram.pug
+
+    include ./../sections/footer.pug
